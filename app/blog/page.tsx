@@ -1,32 +1,18 @@
+import { getAllPosts } from '@/app/lib/posts';
+
 export default function Blog()
 {
-    // Place holder data
-    const posts = [
-        {
-            title: "Getting Started with Next.js",
-            excerpt: "A beginner's guide to building modern web applications with Next.js",
-            date: "March 15, 2024",
-            slug: "getting-started-nextjs"
-        },
-        {
-            title: "Why I Switched from .NET to Next.js",
-            excerpt: "My journey transitioning from backend to full-stack development",
-            date: "March 10, 2024",
-            slug: "dotnet-to-nextjs"
-        }
-    ];
+    const posts = getAllPosts();
 
     return (
-        <div className="container justify-start px-16 py-8 max-w-4xl">
-            {/* Header */}
+        <div className="container mx-auto px-4 py-8 max-w-4xl">
             <header className="mb-12">
                 <h1 className="text-3xl font-bold mb-4">Blog</h1>
                 <p className="text-gray-600">
-                    Thoughts on software development, web technologies, and my journey from .NET to Next.js
+                    Thoughts on software development and my journey in web development
                 </p>
             </header>
 
-            {/* Blog Posts List */}
             <div className="space-y-8">
                 {posts.map((post) => (
                     <article

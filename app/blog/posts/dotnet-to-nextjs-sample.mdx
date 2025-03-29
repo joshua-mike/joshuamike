@@ -1,0 +1,73 @@
+---
+title: "From .NET to Next.js: A Developer's Journey"
+date: "2024-03-28"
+excerpt: "Exploring my transition from backend .NET development to full-stack development with Next.js"
+---
+
+# From .NET to Next.js: A Developer's Journey
+
+After spending 7 years in the .NET ecosystem, I decided to explore the world of modern web development with Next.js. Here's my journey and what I've learned along the way.
+
+## Why Next.js?
+
+Coming from a .NET background, I was looking for a framework that offered:
+- Strong conventions (like ASP.NET MVC)
+- Built-in routing (similar to ASP.NET routing)
+- Server-side capabilities (like .NET Web API)
+
+Next.js checked all these boxes and more.
+
+## Familiar Concepts
+
+Many concepts translate well between .NET and Next.js:
+
+| .NET                 | Next.js              |
+|----------------------|----------------------|
+| Controllers          | Page Components      |
+| _Layout.cshtml       | layout.tsx           |
+| Partial Views        | React Components     |
+| Middleware           | Middleware           |
+| API Controllers      | API Routes           |
+
+## Code Examples
+
+Here's a simple comparison between .NET and Next.js routing:
+
+```csharp
+// .NET Controller
+public class HomeController : Controller
+{
+    public IActionResult Index()
+    {
+        return View();
+    }
+}
+```
+
+```typescript
+// Next.js Page
+export default function Home() {
+    return (
+        <div>
+            <h1>Welcome</h1>
+        </div>
+    );
+}
+```
+
+## What I've Learned So Far
+
+1. Component-based thinking is different from template-based views
+2. JavaScript/TypeScript ecosystem is vast but manageable
+3. The development experience is surprisingly smooth
+4. Hot reloading is a game-changer for productivity
+
+## Next Steps
+
+I'm continuing to build out this portfolio site and learning more about:
+- State management in React
+- Server Components in Next.js
+- Tailwind CSS for styling
+- TypeScript for type safety
+
+Stay tuned for more updates on my journey!
